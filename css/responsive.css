@@ -1,0 +1,311 @@
+/* ====== start responsive ========== */
+@media (max-width:991px) {
+    #header {
+        padding: 15px 0;
+    }
+    .nav{
+        align-items: center;
+    }
+    .seo_home_area,.main_item{
+        height: 70vh;
+    }
+    .banner_top h3 {
+        margin: 0;
+    }
+    .owl-project{
+        position: relative;
+        display: block;
+        height: auto !important;
+        width: 100% !important;
+        transform: none !important;
+        max-height: 100% !important;
+    }
+    .sec-project {
+        height: 600px;
+    }
+    .pro-bg {
+        font-size: 140px;
+        line-height: 160px;
+    }
+    .studio {
+        margin-bottom: 50px;
+    }
+    .Pagination-letter h3 {
+        font-size: 40px;
+        margin: 0 12px 20px;
+    }
+    .Pagination-letter p {
+        font-size: 20px;
+    }
+    .p-serv{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .p-120 {
+        padding: 50px 0;
+    }
+    .hero-studio {
+        height: 40vh;
+    }
+    .quote img{
+        width: 20px !important;
+    }
+    .test-details h5{
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .about-info p {
+        width: 85%;
+    }
+    .title-page h3{
+        font-size: 125px;
+        line-height: 150px;
+    }
+    .st-img img{
+        height: 215px;
+    }
+    .img-slider2 img{
+        height: 250px;
+    }
+    .img-slider3 img{
+        height: 500px;
+    }
+    .info1-text h3{
+        font-size: 150px;
+        line-height: 162px;
+        top: 40px;
+    }
+    .info2-text h3{
+        font-size: 110px;
+        line-height: 160px;
+    }
+    .hero-top {
+        height: 50vh;
+    }
+    .info1-p{
+        bottom: 0;
+    }
+    .info2-text h5{
+        font-size: 35px;
+    }
+    .p-style{
+        font-size: 20px;
+    }
+    .serv-text h3{
+        font-size: 115px;
+    letter-spacing: 0px;
+    line-height: 127px;
+    }
+    .serv-info{
+        padding: 20px;
+        height: auto;
+    }
+    .serv-info h5{
+        width: auto;
+    }
+    .cont-info{
+        padding: 30px 10px;
+        width: 32%;
+    }
+    .icon {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    form{
+        padding: 100px;
+    }
+    .btn-form{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .banner_top h3{
+        margin: 90px 10px 0;
+    }
+    .project_item{
+        min-width: 100%;
+    }
+    .pro-bg {
+        font-size: 60px;
+        line-height: 70px;
+        position: relative;
+        margin-bottom: 50px;
+    }   
+    .studio.p-150{
+        padding: 0 0 50px;
+        margin: 0;
+        } 
+    .studio .active.center{
+        transform: scale(.9);
+    }
+    .ft-head h1{
+        font-size: 40px;
+    }
+    .list-menu a{
+        font-size: 20px;
+
+    }
+    .top-footer{
+        margin-bottom: 50px;
+    }
+    .bt-footer {
+        padding: 30px 0;
+    }
+    .about-info p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .about-info h5 {
+        font-size: 30px;
+    }
+    .test-details h5{
+        font-size: 11px;
+    }
+    .p-150{
+        padding: 70px 0;
+      }
+      .title-page h3 {
+        font-size: 60px;
+        line-height: 72px;
+      }
+      .img-slider img{
+        height: 270px;
+    }
+    .img-slider2 img{
+        height: 125px;
+    }
+    .img-slider3 img{
+        height: 260px;
+    }
+    .info1-text h3{
+        font-size: 80px;
+        line-height: 92px;
+        top: -20px;
+    }
+    .info2-text h3{
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .hero-top {
+        height: 30vh;
+    }
+    .info2-text h5{
+        font-size: 19px;
+    }
+    .about-info-1{
+        margin: 0;
+        padding: 40px 0;
+    }
+    .info1-p {
+        position: relative;
+        margin-top: 30px;
+    }
+    .logo img {
+        height: 30px;
+    }
+    .p-style {
+        font-size: 15px;
+    }
+    .serv-text h3{
+        font-size: 60px;
+    letter-spacing: 0px;
+    line-height: 72px;
+    }
+    .serv-info{
+        padding: 20px;
+    }
+    form {
+        padding: 30px;
+    }
+    .cont-det{
+        display: block;
+    }
+    .cont-info {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .rev-bg {
+        left: -34%;
+    }
+    .review .row.justify-content-center{
+        justify-content: end !important;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1024px) {
+    .seo_home_area,.main_item{
+        height: 50vh;
+    }
+    .project_item {
+        min-width: 60%;
+    }
+    .sec-project {
+        height: 50vh;
+    }
+    .owl-project{
+        position: relative;
+        display: block;
+        height: auto !important;
+        width: 100% !important;
+        transform: none !important;
+        max-height: 100% !important;
+    }
+    .sec-project {
+        height: 600px;
+    }
+    .title-page h3 {
+        font-size: 170px;
+        line-height: 182px;
+    }
+    .hero-studio {
+        height: 40vh;
+    }
+    .st-img img{
+        height: 285px;
+    }
+    .img-slider img{
+        height: 355px;
+    }
+    .img-slider2 img{
+        height: 330px;
+    }
+    .img-slider3 img{
+        height: 450px;
+    }
+    .info1-text h3{
+        font-size: 200px;
+        line-height: 222px;
+    }
+    .info2-text h3{
+        font-size: 160px;
+        line-height: 172px;
+    }
+    .hero-top {
+        height: 48vh;
+    }
+    .info1-p{
+        bottom: 11%;
+    }
+    .info2-text h5{
+        font-size: 55px;
+    }
+    .serv-info{
+        padding: 40px 10px;
+        height: 500px;
+    }
+    .cont-info{
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 500px){
+   
+}
