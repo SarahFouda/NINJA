@@ -633,6 +633,8 @@ transition: all 3s ease;
 }
 .hero-studio{
   height: 90vh;
+  position: relative;
+  z-index: 99;
 }
 .studio-info .serv-info{
   height: 200px;
@@ -924,6 +926,7 @@ position: relative;
   width: 100%;
   animation: dash 5s ease-out alternate infinite;
   margin-bottom: 20px;
+  text-align: center;
 }
 /* .studio{
   margin-bottom: 150px;
@@ -966,6 +969,7 @@ margin: 0;
 .studio-img{
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .st-50{
   width: 50%;
@@ -985,6 +989,22 @@ margin: 0;
 .img-slider3 img{
   height: 640px;
     object-fit: cover;
+}
+.workk-title h4{
+  font-size: 160px;
+    letter-spacing: 1px;
+    line-height: 177px;
+    margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'coolvetica Extralight';
+  -webkit-text-stroke: 1px #e5f4199c;
+  text-stroke: 1px #e5f41a;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  width: 100%;
+  text-align: center;
+  animation: dash 5s ease-out alternate infinite;
 }
 /* end studio page */
 /* start contact page */

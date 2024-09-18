@@ -194,7 +194,7 @@ $('.owl-item>.item').on('click', function() {
         nav: true,
         dots:false,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 8000,
         animateOut: "slideOutUp",
         animateIn: "slideInUp",
       navText: []
@@ -213,7 +213,7 @@ $('.owl-item>.item').on('click', function() {
       dots: false,
       nav: false,
       margin:10,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 8000,
       center: true,
       animateOut: "slideOutRight",
        animateIn: "slideInLeft",
@@ -289,4 +289,71 @@ $('.owl-item>.item').on('click', function() {
     wowAnimation()
 });
 
+$(document).ready(function () {
+ 
+  gsap.from(".pro-bg p", {
+    duration: 3,
+    text: "",
+    delay: 1,
+    scrollTrigger: {
+      trigger: ".studio",
+    }
+  });
+   gsap.from(".info1-text h3", {
+    duration: 1.5,
+    text: "",
+    scrollTrigger: {
+      trigger: ".about-info-1",
+    }
+  });
+    gsap.from(".effect .info2-text h3", {
+    duration: 1,
+    text: "",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".effect",
+    }
+  });
+  
+   gsap.from(".effect-2 .info22-text h3", {
+    duration: 1, 
+    delay: 1, 
+    ease: "none",
+        text: "",
+    scrollTrigger: {
+      trigger: ".effect-2",
 
+    }
+
+  });
+   gsap.from(".serv1 h3", {
+    duration: 1, 
+    ease: "none",
+        text: "",
+    scrollTrigger: {
+      trigger: ".serv1",
+    }
+
+  });
+  gsap.from(".serv2 h3", {
+    duration: 1, 
+    delay : .5,
+    ease: "none",
+        text: "",
+    scrollTrigger: {
+      trigger: ".serv2",
+    }
+
+  });
+  gsap.from(".serv3 h3", {
+    duration: 1, 
+    delay : 1,
+    ease: "none",
+        text: "",
+    scrollTrigger: {
+      trigger: ".serv3",
+    }
+
+  });
+  
+});

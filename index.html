@@ -563,7 +563,7 @@
     <!-- end studio-->
     <!--start review-->
     <section class="review p-150">
-      <div class="rev-bg d-none d-sm-block">
+      <div class="rev-bg">
         <h3>Our lovely partners</h3>
       </div>
       <div class="container-fluid">
@@ -768,45 +768,37 @@
   <script src="js/main.js"></script>
   <script>
     $(document).ready(function () {
+  const races = document.querySelector(".owl-project");
 
-      const races = document.querySelector(".owl-project");
+  function getScrollAmount() {
+    let racesWidth = races.scrollWidth;
+    return -(racesWidth - window.innerWidth);
+  }
 
-      function getScrollAmount() {
-        let racesWidth = races.scrollWidth;
-        return -(racesWidth - window.innerWidth);
-      }
+  const tween = gsap.to(races, {
+    x: getScrollAmount,
+    duration: 3,
+    ease: "none"
+  });
 
-      const tween = gsap.to(races, {
-        x: getScrollAmount,
-        duration: 3,
-        ease: "none"
-      });
-
-      ScrollTrigger.create({
-        trigger: ".owl-project",
-        start: "top 0%",
-        end: () => `+=${getScrollAmount() * -1}`,
-        pin: true,
-        animation: tween,
-        scrub: 1,
-        invalidateOnRefresh: true,
-        markers: false
-      });
-      gsap.from(".pro-bg p", {
-        duration: 3,
-        text: "",
-        delay: 1,
-        scrollTrigger: {
-          trigger: ".studio",
-        }
-      });
-      $('.pro-img').on('mouseover', function (e) {
-        $(this).trigger('play.owl.autoplay');
-      });
-      $('.pro-img').on('mouseleave', function (e) {
-        $(this).trigger('stop.owl.autoplay');
-      });
-    });
+  ScrollTrigger.create({
+    trigger: ".owl-project",
+    start: "top 0%",
+    end: () => `+=${getScrollAmount() * -1}`,
+    pin: true,
+    animation: tween,
+    scrub: 1,
+    invalidateOnRefresh: true,
+    markers: false
+  });
+  $('.pro-img').on('mouseover', function (e) {
+    $(this).trigger('play.owl.autoplay');
+  });
+  $('.pro-img').on('mouseleave', function (e) {
+    $(this).trigger('stop.owl.autoplay');
+  });
+   
+});
   </script>
 </body>
 
