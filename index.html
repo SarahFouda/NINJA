@@ -797,7 +797,14 @@
   $('.pro-img').on('mouseleave', function (e) {
     $(this).trigger('stop.owl.autoplay');
   });
-   
+  gsap.from(".pro-bg p", {
+    duration: 3,
+    text: "",
+    delay: 1,
+    scrollTrigger: {
+      trigger: ".studio",
+    }
+  });
 });
   </script>
 </body>

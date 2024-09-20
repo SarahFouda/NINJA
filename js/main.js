@@ -290,15 +290,6 @@ $('.owl-item>.item').on('click', function() {
 });
 
 $(document).ready(function () {
- 
-  gsap.from(".pro-bg p", {
-    duration: 3,
-    text: "",
-    delay: 1,
-    scrollTrigger: {
-      trigger: ".studio",
-    }
-  });
    gsap.from(".info1-text h3", {
     duration: 1.5,
     text: "",
@@ -307,7 +298,7 @@ $(document).ready(function () {
     }
   });
     gsap.from(".effect .info2-text h3", {
-    duration: 1,
+    duration: 1.5,
     text: "",
     ease: "none",
     scrollTrigger: {
@@ -316,7 +307,7 @@ $(document).ready(function () {
   });
   
    gsap.from(".effect-2 .info22-text h3", {
-    duration: 1, 
+    duration: 2, 
     delay: 1, 
     ease: "none",
         text: "",
@@ -327,16 +318,15 @@ $(document).ready(function () {
 
   });
    gsap.from(".serv1 h3", {
-    duration: 1, 
-    ease: "none",
-        text: "",
+    duration: 1.5, 
+    text: "",
     scrollTrigger: {
       trigger: ".serv1",
     }
 
   });
   gsap.from(".serv2 h3", {
-    duration: 1, 
+    duration: 1.5, 
     delay : .5,
     ease: "none",
         text: "",
@@ -346,7 +336,7 @@ $(document).ready(function () {
 
   });
   gsap.from(".serv3 h3", {
-    duration: 1, 
+    duration: 2, 
     delay : 1,
     ease: "none",
         text: "",
