@@ -1067,5 +1067,8 @@ letter-spacing: 2px;
   font-size: 25px;
   word-wrap: break-word;
 }
+.lg-outer{
+  z-index: 99999;
+}
 /* end contact page */
 

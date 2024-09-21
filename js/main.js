@@ -345,5 +345,38 @@ $(document).ready(function () {
     }
 
   });
+  $('.img-gallery1').lightGallery({
+    selector: '.item a',
+    thumbnail: true,
+    share: false,
+    fullScreen: true,
+    autoplay: false,
+    autoplayControls: false,
+    actualSize: true,
+    loop:false
+});
+
+ $('.img-gallery2').lightGallery({
+    selector: '.item a',
+    thumbnail: true,
+    share: false,
+    fullScreen: true,
+    autoplay: false,
+    autoplayControls: false,
+    actualSize: true,
   
+});
+
+ $('.img-gallery3').lightGallery({
+    selector: '.item a',
+    thumbnail: true,
+    share: false,
+    fullScreen: true,
+    autoplay: false,
+    autoplayControls: false,
+    actualSize: true,
+  
+});
+
+
 });
