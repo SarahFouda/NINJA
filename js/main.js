@@ -54,7 +54,7 @@ $('.owl-client').owlCarousel({
             items: 2
         },
         600: {
-            items: 3
+            items: 4
         },
         1000: {
             items: 6
@@ -347,35 +347,35 @@ $(document).ready(function () {
   });
   $('.img-gallery1').lightGallery({
     selector: '.item a',
-    thumbnail: true,
+    thumbnail: false,
     share: false,
     fullScreen: true,
     autoplay: false,
     autoplayControls: false,
     actualSize: true,
-    loop:false
+    download:false
 });
 
  $('.img-gallery2').lightGallery({
     selector: '.item a',
-    thumbnail: true,
+    thumbnail: false,
     share: false,
     fullScreen: true,
     autoplay: false,
     autoplayControls: false,
     actualSize: true,
-  
+    download:false
 });
 
  $('.img-gallery3').lightGallery({
     selector: '.item a',
-    thumbnail: true,
+    thumbnail: false,
     share: false,
     fullScreen: true,
     autoplay: false,
     autoplayControls: false,
     actualSize: true,
-  
+    download:false
 });
 
 

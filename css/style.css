@@ -467,7 +467,11 @@ video {
   border: 1px solid #fff;
   padding: 5px;
   font-family: 'coolvetica Extralight';
-
+}
+.work-button{
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
 }
 .owl-dots{
   text-align: center;
@@ -636,6 +640,15 @@ transition: all 3s ease;
   position: relative;
   z-index: 99;
 }
+.img-header{
+  height: 100%;
+  text-align: center;
+}
+.img-header img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .studio-info .serv-info{
   height: 200px;
 }
@@ -795,6 +808,10 @@ position: relative;
 }
 .hero-top{
   height: 110vh;
+}
+.hero-top .img-header img {
+  width: 80%;
+  object-fit: contain;
 }
 .work-text p{
     margin: 30px 0 50px;
@@ -1005,6 +1022,41 @@ margin: 0;
   width: 100%;
   text-align: center;
   animation: dash 5s ease-out alternate infinite;
+}
+.pagination-div {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+.pagination {
+  margin-bottom: 0px;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.pagination li {
+  margin-right: 10px;
+}
+.pagination li a {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 30px;
+  height: 45px;
+  line-height: 44px;
+  display: block;
+  color: #777;
+  border-radius: 50%;
+}
+.pagination li a.page-number {
+  /* color: #fff; */
+  border: 1px solid transparent;
+}
+.pagination li a:hover, .pagination li a.current {
+  /* background: #E5F419; */
+  color: #E5F419;
+  /* transform: scale(1.5); */
+  opacity: 1;
 }
 /* end studio page */
 /* start contact page */
