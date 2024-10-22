@@ -14,9 +14,9 @@
         margin: 0;
     }
     .owl-project{
-        position: relative;
+        position: relative !important;
         display: block;
-        height: auto !important;
+        height: 100% !important;
         width: 100% !important;
         transform: none !important;
         max-height: 100% !important;
@@ -30,6 +30,7 @@
     }
     .studio {
         margin-bottom: 50px;
+        min-height: auto;
     }
     .Pagination-letter h3 {
         font-size: 40px;
@@ -99,7 +100,7 @@
     }
     .serv-info{
         padding: 20px;
-        height: auto;
+        height: auto !important;
     }
     .serv-info h5{
         width: auto;
@@ -121,6 +122,10 @@
     .btn-form{
         font-size: 30px;
     }
+    .workk-title h4{
+    font-size: 35px;
+    line-height: 45px;
+    }
 }
 
 @media (min-width:912px) and (max-width: 1368px) {
@@ -138,7 +143,7 @@
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
     .title-page h3 {
-        font-size: 212px;
+        font-size: 188px;
         line-height: 227px;
 
     }
@@ -196,7 +201,7 @@
         padding: 50px 0;
       }
       .title-page h3 {
-        font-size: 75px;
+        font-size: 50px;
         line-height: 72px;
       }
       .img-slider img{
@@ -242,9 +247,9 @@
     letter-spacing: 0px;
     line-height: 72px;
     }
-    .serv-info{
+    /* .serv-info{
         padding: 20px;
-    }
+    } */
     form {
         padding: 30px;
     }

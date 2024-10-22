@@ -411,9 +411,12 @@ video {
   width: 100%;
   height: 100vh;
 }
-.pro-details,.pro-img,.owl-carousel .owl-stage,.owl-carousel .owl-item,.owl-carousel .owl-stage-outer{
-  height: 100%;
+.pro-details,.pro-details .pro-img,.pro-details .owl-carousel .owl-stage,.pro-details .owl-carousel .owl-item,.pro-details .owl-carousel .owl-stage-outer{
+  height: 100% !important;
 }
+/* .pro-details,.pro-img,.owl-carousel .owl-stage,.owl-carousel .owl-item,.owl-carousel .owl-stage-outer{
+  height: 100%;
+} */
 .sec-project img{
   width: 100%;
   object-fit: cover;
@@ -467,6 +470,7 @@ video {
   border: 1px solid #fff;
   padding: 5px;
   font-family: 'coolvetica Extralight';
+
 }
 .work-button{
   position: absolute;
@@ -623,6 +627,7 @@ transition: all 3s ease;
 .studio{
   position: relative;
   overflow: hidden;
+  min-height: 725px;
 }
 .studio .active.center {
   transform: scale(1);
@@ -649,9 +654,9 @@ transition: all 3s ease;
   width: 100%;
   object-fit: cover;
 }
-.studio-info .serv-info{
+/* .studio-info .serv-info{
   height: 200px;
-}
+} */
 .studio-info .serv-info h5{
   margin: 0 auto 15px;
   width: 100%;
@@ -878,7 +883,9 @@ position: relative;
 }
 /* end work page */
 /* start services page */
-
+.grid > div{
+  display: flex;
+}
 .serv-text h3{
   font-size: 150px;
   letter-spacing: 2px;
@@ -901,7 +908,7 @@ position: relative;
 .serv-info{
   border: 1px solid #e5f419;
   padding: 40px;
-  height: 400px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .serv-info h5{
@@ -1043,7 +1050,7 @@ margin: 0;
   text-align: center;
   width: 30px;
   height: 45px;
-  line-height: 44px;
+  line-height: 20px;
   display: block;
   color: #777;
   border-radius: 50%;
@@ -1122,5 +1129,7 @@ letter-spacing: 2px;
 .lg-outer{
   z-index: 99999;
 }
-/* end contact page */
+.lg-backdrop{
+  background-color: rgb(0 0 0 / 70%);
+}
 
