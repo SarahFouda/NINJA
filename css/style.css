@@ -937,9 +937,9 @@ position: relative;
   margin-top: 150px;
 }
 .title-page h3{
-  font-size: 255px;
+  font-size: 320px;
   letter-spacing: 1px;
-  line-height: 232px;
+  line-height: 332px;
   text-transform: uppercase;
   font-family: 'coolvetica Extralight';
   -webkit-text-stroke: 1px #e5f4199c;
@@ -951,6 +951,9 @@ position: relative;
   animation: dash 5s ease-out alternate infinite;
   margin-bottom: 20px;
   text-align: center;
+}
+.title-page-2 h3{
+  font-size: 260px;
 }
 /* .studio{
   margin-bottom: 150px;
@@ -998,10 +1001,10 @@ margin: 0;
 .st-50{
   width: 50%;
 }
-.st-50 img{
+/* .st-50 img{
   height: 100%;
-  object-fit: cover;
-}
+  object-fit: contain;
+} */
 .img-slider img{
   height: 550px;
     object-fit: cover;
@@ -1068,10 +1071,16 @@ margin: 0;
 /* end studio page */
 /* start contact page */
 form{
-  border: 1px solid #E5F419;
-  padding: 100px 200px;
   position: relative;
   margin-bottom: 150px;
+  letter-spacing:0
+
+}
+.sec-form{
+  border: 1px solid #E5F419;
+  padding: 100px 200px 50px;
+  position: relative;
+  margin-bottom: 60px;
 }
 .form-control {
   background: transparent !important;
@@ -1083,12 +1092,15 @@ form{
   box-shadow: none !important;
   margin-bottom: 80px;
 }
-.form-control::placeholder{
+.form-control:focus{
+  border-color: #fff;
+}
+.form-control::placeholder,.contact-us label{
   color: #E5F41A !important;
   font-family: 'coolvetica Extralight';
 font-size: 30px;
 text-transform: capitalize;
-letter-spacing: 2px;
+letter-spacing: 1px;
 }
 .btn-form{
   background: #e5f41a;
@@ -1132,4 +1144,114 @@ letter-spacing: 2px;
 .lg-backdrop{
   background-color: rgb(0 0 0 / 70%);
 }
+.contact-us label{
+font-size: 22px;
+}
+.start-project .form-control{
+  padding: 20px 0 5px;
+}
+.custom_radio input[type="radio"]{
+ display: none;
+}
+.custom_radio input[type="radio"] + label{
+ position: relative;
+ display: inline-block;
+ padding-left: 1.5em;
+ margin-right: 2em;
+ cursor: pointer;
+ line-height: 1em;
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+ font-size: 15px;
+ font-weight: bold;
+}
+.custom_radio input[type="radio"] + label:before,
+.custom_radio input[type="radio"] + label:after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: .7em;
+ height: .7em;
+ text-align: center;
+ color: white;
+ font-family: Times;
+ border-radius: 50%;
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+}
+.custom_radio input[type="radio"] + label:before {
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ box-shadow: inset 0 0 0 0.1em #d1eb25, inset 0 0 0 1em transparent;
+}
+.custom_radio input[type="radio"] + label:hover:before {
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ box-shadow: inset 0 0 0 0.3em #d1eb25, inset 0 0 0 1em #d1eb25;
+}
+.custom_radio input[type="radio"]:checked + label:before {
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ box-shadow: inset 0 0 0 0.2em #e5f419, inset 0 0 0 1em #e5f419;
+}
+.custom_radio.form-control{
+  border: none;
+}
+.form-title{
+  border: 1px solid #E5F419;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.form-title h3{
+  color: #E5F419 !important;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 35px;
+}
 
+.in-logo label {
+  display: block;
+  position: relative;
+  border: 1px solid #e5f419;
+  width: 100%;
+padding: 10px;
+margin-bottom: 30px;
+}
+.in-logo > input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: -10;
+  height: 0;
+  width: 0;
+  background-clip: content-box;
+  
+}
+.in-logo > input:focus {
+  outline: none;
+}
+.in-logo > input:focus + label {
+  box-shadow: 0 0 4px black;
+}
+.in-logo > input:checked + label  {
+  background-color: #e5f419;
+}
+.in-logo h4{
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'coolvetica';
+}
+.in-logo > input:checked + label  h4{
+  color: #000;
+}
+.radio-form{
+  padding: 0 0 50px;
+}
+.grid > div{
+  display: flex;
+}

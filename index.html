@@ -769,18 +769,19 @@
   <script>
     $(document).ready(function () {
   const races = document.querySelector(".owl-project");
-
+  let mm = gsap.matchMedia();
   function getScrollAmount() {
     let racesWidth = races.scrollWidth;
     return -(racesWidth - window.innerWidth);
   }
-
+  mm.add("(min-width: 800px)", () => {
   const tween = gsap.to(races, {
     x: getScrollAmount,
     duration: 3,
     ease: "none"
   });
-
+  
+  
   ScrollTrigger.create({
     trigger: ".owl-project",
     start: "top 0%",
@@ -805,7 +806,8 @@
       trigger: ".studio",
     }
   });
-});
+  });
+  });
   </script>
 </body>
 
