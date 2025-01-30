@@ -126,7 +126,7 @@ $('.img-slider3').owlCarousel({
 });
 
 $('.pro-img').owlCarousel({
-    loop: true,
+    loop:false ,
     margin: 0,
     nav: false,
     dots: false,
@@ -136,8 +136,8 @@ $('.pro-img').owlCarousel({
     // smartSpeed: 1000,
     animateOut: "slideOutUp",
     animateIn: "slideInUp",
+    mouseDrag: false,
     // touchDrag: false,
-    // mouseDrag: false,
     // pullDrag: false,
 });
 

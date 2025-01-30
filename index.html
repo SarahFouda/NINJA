@@ -131,12 +131,13 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
-
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -153,12 +154,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -175,12 +178,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -197,12 +202,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -219,12 +226,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -241,12 +250,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -263,12 +274,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -285,12 +298,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -307,12 +322,14 @@
         <div class="project_item">
           <div class="sec-project">
             <div class="pro-details">
+              <a href="work-details.html">
               <div class="pro-img owl-carousel">
                 <img src="img/projects/pro3.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro2.png" class="img-fluid" alt="project-img">
                 <img src="img/projects/pro1.png" class="img-fluid" alt="project-img">
 
               </div>
+            </a>
             </div>
             <div class="pro-info">
               <div class="pro-title">
@@ -765,12 +782,12 @@
   <script src="vendors/gsap/gsap.min.js"></script>
   <script src="vendors/gsap/ScrollTrigger.min.js"></script>
   <script src="vendors/gsap/ScrollToPlugin.min.js"></script>
+  <script src="vendors/gsap/Draggable.min.js"></script>
   <script src="vendors/gsap/TextPlugin.min.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="js/main.js"></script>
   <script>
     $(document).ready(function () {
-  let sections = document.querySelectorAll(".project_item");
   let races = document.querySelector(".owl-project");
   let mm = gsap.matchMedia();
   function getScrollAmount() {
@@ -778,53 +795,45 @@
     return -(racesWidth - window.innerWidth);
   }
   mm.add("(min-width: 800px)", () => {
-  const tween = gsap.to(races, {
+  let tween = gsap.to(races, {
     x: getScrollAmount,
     duration: 3,
     ease: "none"
   });
-  
-  
-   ScrollTrigger.create({
-    trigger: ".owl-project",
-    start: "top 0%",
-    end: () => `+=${getScrollAmount() * -1}`,
-    pin: true,
-    animation: tween,
-    scrub: 1,
-    invalidateOnRefresh: true,
-    markers: false
-  });
+
   $('.pro-img').on('mouseover', function (e) {
     $(this).trigger('play.owl.autoplay');
   });
   $('.pro-img').on('mouseleave', function (e) {
     $(this).trigger('stop.owl.autoplay');
   });
-  ScrollTrigger.observe({
-  target: ".projects",
-  type: "touch, pointer", // comma-delimited list of what to listen for ("wheel,touch,scroll,pointer")
-  ease: "none",
 
-  onDrag: (self) => {
-    // console.log(self.deltaX);
-    // console.log(self.deltaY);
-    let horPos = Math.sqrt(self.deltaX * self.deltaX)
-    let verPos = Math.sqrt(self.deltaY * self.deltaY)
-    if(horPos > verPos) {
-      gsap.to(window, {
-        scrollTo: {
-          y: `-=${self.deltaX * 10 }`,
-        }
-      });
-    } else {
-      gsap.to(window, {
-        scrollTo: {
-          y: `-=${self.deltaY * 2 }`,
-        }
-      });
+  ScrollTrigger.create({
+    id: 'owl-project',
+    animation: tween,
+    trigger: '.owl-project',
+    start: "top 0%",
+    end: `+=${getScrollAmount() * -1}`,
+     scrub: 1,
+    pin: true,
+    anticipatePin: 1,
+    invalidateOnRefresh: true,
+    markers: false
+  });
+  
+  var proxy = document.createElement('div');
+  var draggable = Draggable.create(proxy, {
+    trigger: '.owl-project',
+    type: 'x',
+    bounds: {
+    maxX: 0,
+    minX: tween.scrollTrigger.start - tween.scrollTrigger.end
+  },
+    onDrag: function() {
+      tween.scrollTrigger.scroll(Math.abs(this.x - tween.scrollTrigger.start));
     }
-  }
+  })[0];
+ 
 });
   gsap.from(".pro-bg p", {
     duration: 3,
@@ -833,7 +842,6 @@
     scrollTrigger: {
       trigger: ".studio",
     }
-  });
   });
   });
   </script>
