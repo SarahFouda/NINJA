@@ -126,19 +126,18 @@ $('.img-slider3').owlCarousel({
 });
 
 $('.pro-img').owlCarousel({
-    loop:false ,
-    margin: 0,
-    nav: false,
-    dots: false,
-    autoplay: false,
-    items:1,
-    autoplayTimeout: 1200,
-    // smartSpeed: 1000,
-    animateOut: "slideOutUp",
-    animateIn: "slideInUp",
-    mouseDrag: false,
-    // touchDrag: false,
-    // pullDrag: false,
+  loop:false ,
+  margin: 0,
+  nav: false,
+  dots: false,
+  autoplay: false,
+  items:1,
+  autoplayTimeout: 1200,
+  // smartSpeed: 1000,
+  animateOut: "slideOutUp",
+  animateIn: "slideInUp",
+  mouseDrag: false,
+
 });
 
 var $owl = $('.owl-studio');
